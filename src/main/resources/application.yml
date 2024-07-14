@@ -1,0 +1,35 @@
+spring:
+    application:
+        name: employee-management
+    datasource:
+        url: jdbc:mysql://localhost:3306/employee-management
+        username: root
+        password: root
+    jpa:
+        hibernate:
+            ddl-auto: update
+    servlet:
+        multipart:
+            max-file-size: 5MB
+            max-request-size: 10MB
+    mail:
+        host: smtp.gmail.com
+        port: 587
+        username: javamailsender2024@gmail.com
+        password: uiiz kuxy pcfo zmfp
+        properties:
+            mail:
+                smtp:
+                    auth: true
+                    starttls:
+                        enable: true
+picture:
+    upload:
+        directory: C:\Users\xXx\IdeaProjects\FullStack\employee-management\pictures
+
+jwt:
+    expiration: 600000
+    SECRET-KEY: YXNkZmYkIyNzZFNEU0RBQVNERksjQEBkc2ZqZGZrZHNqQEAjZHNmZ2ZnZmdeXiYmWipeJSQkI2RzZHMkIyVzZDQ1MDk5KUkjJCg5V0ZTSUo=
+app:
+    cors:
+        origins: http://localhost:4200
